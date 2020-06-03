@@ -1,0 +1,112 @@
+/* code CSS */
+* { 
+	margin: 0px;
+	padding: 0px;
+}
+
+h1, h2, h3 {
+	margin-bottom: 10px;
+}
+
+.nav {
+	padding: 10px 10px 10px 10px;
+}
+
+.title-page {
+	color: red;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.website {
+	min-height: 100vh;
+	height: 100%;
+}
+
+.website-columns {
+	display: grid;
+	grid-template-columns: 300px auto;
+    /* grid-template-rows: auto; */
+}
+
+.website-columns-2 {
+	display: grid;
+	grid-template-areas: "h h" "n c" "f f";
+	grid-template-columns: 300px auto;
+}
+
+.website-columns-3 {
+	display: grid;
+	grid-template-areas: "h h h" "n c a" "f f f";
+	grid-template-columns: 300px auto 300px;
+}
+
+.header-container { 
+	background-color: red;
+	padding: 10px 10px 10px 10px;
+}
+
+.header-pos {
+	grid-area: h;
+}
+
+.aside-container, .aside-container-left, .aside-container-right { 
+	min-height: 100vh;
+	height: 100%;
+	background-color: green;
+	padding: 10px 10px 10px 10px;
+}
+
+.aside-pos {
+	grid-area: n;
+}
+
+.aside-pos-left {
+	grid-area: n;
+}
+
+.aside-pos-right {
+	grid-area: a;
+}
+
+.main-container{ 
+	min-height: 100vh;
+	height: 100%;
+	background-color: grey;
+	padding: 10px 10px 10px 10px;
+}
+
+.main-pos {
+	grid-area: c;
+}
+
+.aside-p {
+	margin-top: 10px;
+}
+
+.footer-container { 
+	background-color: yellow;
+	padding: 10px 10px 10px 10px;
+}
+
+.foot-pos {
+	grid-area: f;
+}
+
+.section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}	
+
+.navigation-link {
+	color: black;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+.navigation-link:hover {
+	color: red;
+	cursor: pointer;
+	text-decoration: underline;
+}
